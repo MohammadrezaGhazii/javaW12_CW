@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Q1;
 
 public class MyThreadExt extends Thread{
     public MyThreadExt(String name) {

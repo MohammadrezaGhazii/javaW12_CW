@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Q1;
 
 import static jdk.dynalink.NamedOperation.getName;
 
