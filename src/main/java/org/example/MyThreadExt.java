@@ -7,6 +7,14 @@ public class MyThreadExt extends Thread{
 
     @Override
     public void run() {
-        System.out.println("Hello Word - Extend");
+        for (int i = 0; i < 50; i++) {
+            System.out.println(getName() + " " + i + " Hello Word - Extend");
+//            System.out.println("Extend " + getState());
+//            try {
+//                Thread.sleep(100);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+        }
     }
 }
