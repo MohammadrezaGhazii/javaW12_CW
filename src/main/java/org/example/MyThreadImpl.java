@@ -1,13 +1,23 @@
 package org.example;
 
+import static jdk.dynalink.NamedOperation.getName;
+
 public class MyThreadImpl implements Runnable {
-    String name = "" ;
+    Thread thread ;
     public MyThreadImpl(String name) {
-        this.name=name;
+        thread = new Thread(this,name);
     }
 
     @Override
     public void run() {
-        System.out.println("Hello Word - Implement");
+        for (int i = 0; i < 50; i++) {
+            System.out.println(thread.getName() + " " + i +" Hello Word - Implement");
+//            System.out.println("Implement " + thread.getState());
+//            try {
+//                Thread.sleep(100);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+        }
     }
 }
