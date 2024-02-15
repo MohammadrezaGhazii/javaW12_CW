@@ -15,7 +15,6 @@ public class BankAccount {
    public void deposit(int amount){
       this.balance += amount;
       System.out.println("new balance is :" + this.balance);
-      
    }
    public void withdraw(int amount){
       if (balance >= amount){
