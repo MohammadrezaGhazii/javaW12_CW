@@ -18,6 +18,12 @@ public class MainQ3 {
         ATMThread atmThread5=new ATMThread("account5",account5);
         Thread tAccount5=new Thread(atmThread5);
 
+        tAccount1.start();
+        tAccount2.start();
+        tAccount3.start();
+        tAccount4.start();
+        tAccount5.start();
+
         tAccount1.join();
         tAccount2.join();
         tAccount3.join();
