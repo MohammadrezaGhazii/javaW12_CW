@@ -26,6 +26,6 @@ public class MainQ3 {
         tAccount4.join();
         tAccount5.join();
 
-        System.out.println("balance1= " +account.getBalance());
+        System.out.println("balance1= " +account.getBalance().get());
     }
 }
